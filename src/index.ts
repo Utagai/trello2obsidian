@@ -125,6 +125,7 @@ function getListIdsFromCards(cardResps: CardResp[]): string[] {
   return Array.from(new Set(cardResps.map((cardResp) => cardResp.idList)));
 }
 
+// TODO: Bunch of duplication in the get*() functions below.
 async function getCards(boardId: string): Promise<CardResp[]> {
   const options = {
     hostname: "api.trello.com",
