@@ -1,7 +1,6 @@
 import { request } from "https";
 import fs from "fs/promises";
 import path from "path";
-import { createReadStream } from "fs";
 
 const apiKey = process.env.API_KEY;
 const apiToken = process.env.API_TOKEN;
