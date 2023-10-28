@@ -91,7 +91,7 @@ function generateMarkdown(board: Board): string {
   return markdown;
 }
 
-// Get's every project from Trello with all the information nicely organized for efficient conversion to Markdown.
+// Get's every project from Trello with all the information nicely organized for easy conversion to Markdown.
 async function getProjects(): Promise<Board[]> {
   const boardResps = await getBoards();
   return Promise.all(
