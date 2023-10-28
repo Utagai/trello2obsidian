@@ -74,6 +74,11 @@ function generateMarkdown(board: Board): string {
 
       markdown += "\n";
     });
+
+    if (list.name === "Done") {
+      markdown += "**Complete**\n";
+    }
+
     markdown += "\n\n";
   });
 
