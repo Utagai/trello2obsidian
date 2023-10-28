@@ -1,0 +1,26 @@
+{
+  "name": "trello2obsidian",
+  "version": "1.0.0",
+  "description": "Converts a Trello board into its (roughly) equivalent Obsidian kanban document.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utagai/trello2obsidian.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utagai/trello2obsidian/issues"
+  },
+  "homepage": "https://github.com/utagai/trello2obsidian#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "typescript": "^5.2.2"
+  }
+}
