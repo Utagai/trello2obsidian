@@ -67,7 +67,7 @@ function generateMarkdown(board: Board): string {
     list.cards.forEach((card) => {
       markdown += "- [ ] ";
       card.labels.forEach((label) => {
-        markdown += `#${label.toLowerCase()} `;
+        markdown += `#${label.toLowerCase().replace(/\s/g, "-")} `;
       });
 
       markdown += `${card.name}<br><br><br>${card.desc.replace(/\n/g, "<br>")}`;
